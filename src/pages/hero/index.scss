@@ -1,0 +1,28 @@
+.hero {
+
+  &__carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  &__manage-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__info-item {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
+  &__info-item-key {
+    width: 40%;
+  }
+
+  &__info-item-value {
+    width: 60%;
+    text-align: right;
+  }
+}

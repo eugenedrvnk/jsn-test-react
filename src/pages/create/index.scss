@@ -1,0 +1,15 @@
+.create-form {
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    padding: 10px 0;
+  }
+
+  &__create-btn {
+    width: 100%;
+  }
+}

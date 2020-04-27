@@ -1,0 +1,21 @@
+@import 'assets/scss/vars.scss';
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: $max-width;
+  width: 100%;
+  background-color: black;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $header-padding;
+  background-color: $header-bg-blue;
+
+  &__link {
+    margin-right: 10px;
+  }
+}
