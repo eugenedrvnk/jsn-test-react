@@ -88,12 +88,13 @@ export default function Edit(props) {
               <img 
                 src={img} 
                 key={index}
-                className="hero__carousel-img"
+                className="edit-form__carousel-img"
               />
             )}
           </Carousel>
           <Button 
             variant="contained"
+            className="edit-form__delete-img-btn"
             onClick={onDeleteImageButtonClick}
           >
             Delete image
@@ -102,7 +103,7 @@ export default function Edit(props) {
 
         <Button 
           variant="contained" 
-          className="edit-form__create-btn"
+          className="edit-form__update-btn"
           onClick={onUpdateButtonClick}
         >
           Update hero 🔥

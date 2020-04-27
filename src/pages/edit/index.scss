@@ -5,4 +5,19 @@
     flex-direction: column;
     margin-bottom: 10px;
   }
+
+  &__carousel {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .edit-form__delete-img-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  &__update-btn {
+    width: 100%;
+  }
 }
