@@ -22,11 +22,11 @@ export default function Hero(props) {
   let hero = context.heroes.find(hero => hero.id == match.params.id)
   let {images, ...heroTextFields} = hero
 
-  function editButtonClick() {
+  function onEditButtonClick() {
     history.push(`/edit/${hero.id}`)
   }
 
-  function deleteButtonClick() {
+  function onDeleteButtonClick() {
     context.deleteHero(hero.id)
     history.push(`/`)
   }
@@ -41,8 +41,8 @@ export default function Hero(props) {
         </Carousel>
 
         <div className="hero__manage-buttons">
-          <Button variant="contained" onClick={() => editButtonClick()}>Edit</Button>
-          <Button variant="contained" onClick={() => deleteButtonClick()}>Delete</Button>
+          <Button variant="contained" onClick={() => onEditButtonClick()}>Edit</Button>
+          <Button variant="contained" onClick={() => onDeleteButtonClick()}>Delete</Button>
         </div>
 
         <div className="hero__info-list">

@@ -33,7 +33,7 @@ export default function Create(props) {
     setImages(Object.keys(files).map(key => (URL.createObjectURL(files[key]))))
   }
 
-  function createButtonClick() {
+  function onCreateButtonClick() {
     let itemId = context.heroes.length
     context.addHero({
       id: itemId,
@@ -64,7 +64,7 @@ export default function Create(props) {
         <Button 
           variant="contained" 
           className="create-form__create-btn"
-          onClick={createButtonClick}
+          onClick={onCreateButtonClick}
         >
           Create hero 🔥
         </Button>
